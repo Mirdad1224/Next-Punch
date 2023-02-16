@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Odibee Sans", cursive;
+  background: #000428;
+  background: -webkit-linear-gradient(to right, #132e47, #000428);
+  background: linear-gradient(to right, #132e47, #000428);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .header {
+    position: absolute;
+    top: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      color: white;
+      font-size: 4rem;
+    }
+
+    .panel {
+      display: flex;
+      align-items: center;
+
+      button {
+        border-radius: 1rem;
+        background: white;
+        color: rgb(49, 43, 99);
+        border: none;
+        padding: 0.5rem 2rem;
+
+        font-family: "Odibee Sans", cursive;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      .score {
+        border-radius: 1rem;
+        background: white;
+        color: rgb(49, 43, 99);
+        padding: 0.5rem 2rem;
+        font-family: "Odibee Sans", cursive;
+        font-size: 1.5rem;
+        margin: 0 0 0 2rem;
+      }
+    }
+  }
+}
+
+.board {
+  padding: 0.75rem;
+  display: grid;
+  grid-template-columns: 6rem 6rem 6rem 6rem;
+  background-color: #151a25;
+  gap: 0.75rem;
+  border-radius: 1rem;
+  position: relative;
+
+  .game-over {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #151a25de;
+    border-radius: 1rem;
+    color: white;
+
+    h3 {
+      font-size: 4rem;
+      margin: 1rem;
+    }
+
+    p {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    button {
+      margin: 1rem 0;
+      padding: 1rem 0.7rem;
+      background-color: #000428;
+      color: #fff;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .grid-box {
+    height: 6rem;
+    width: 6rem;
+    background-color: #242a38;
+    border-radius: 1rem;
+  }
+
+  .tile {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    user-select: none;
+  }
+
+  .tile-2 {
+    background: #eee4da;
+    color: #776e65;
+  }
+
+  .tile-4 {
+    background: #ede0c9;
+    color: #776e65;
+  }
+
+  .tile-8 {
+    background: #f2b178;
+    color: #faf6f2;
+  }
+
+  .tile-16 {
+    background: #f59663;
+    color: #faf5f3;
+  }
+
+  .tile-32 {
+    background: #f67c5f;
+    color: #faf6f2;
+  }
+
+  .tile-64 {
+    background: #f65e3b;
+    color: #faf6f2;
+  }
+
+  .tile-128 {
+    background: #edcf73;
+    color: #faf6f2;
+  }
+
+  .tile-256 {
+    background: #eecc62;
+    color: #faf6f2;
+  }
+
+  .tile-512 {
+    background: #edc851;
+    color: #faf6f2;
+  }
+
+  .tile-1024 {
+    background: #eec43f;
+    color: #faf6f2;
+  }
+
+  .tile-2048 {
+    background: #edc22e;
+    color: #faf6f2;
+  }
+}
